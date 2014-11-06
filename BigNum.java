@@ -50,7 +50,7 @@ public class BigNum {
             System.out.println("Addition Failed");
             return null;
         }
-        return trim(add(p,q));
+        return add(p,q);
     }
     
     private static String add (BigNum a, BigNum b) {
@@ -118,7 +118,7 @@ public class BigNum {
             }
             re = re + s;
         }
-        return re;
+        return trim(re);
     }
     
     
@@ -231,5 +231,4 @@ public class BigNum {
     public String toString() {
         return str;
     }
-    
 }
